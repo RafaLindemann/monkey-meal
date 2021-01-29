@@ -1,5 +1,7 @@
 .card {
-  width: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
 }
 
 .card-image {
@@ -13,4 +15,8 @@
   margin: 0;
   text-align: center;
   font-weight: 700;
+}
+
+.card-container {
+  display: grid;
 }
