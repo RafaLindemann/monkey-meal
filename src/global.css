@@ -1,12 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap"); */
 
+@font-face {
+  font-family: metropolis;
+  src: url("http://db.onlinewebfonts.com/t/c02d97eb2b2899bdb0d87b182a64333d.woff2")
+      format("woff2"),
+    /* chrome firefox */;
+  src: url("http://db.onlinewebfonts.com/t/c02d97eb2b2899bdb0d87b182a64333d.woff")
+      format("woff"),
+    /* chrome firefox */;
+}
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
 :root {
-  --rafaelcolor: rgb(192, 59, 81);
+  --rafaelcolor: rgb(185, 30, 77);
 }
 
 html {

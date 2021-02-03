@@ -11,18 +11,27 @@ export function createRegisterForm() {
   form.className = "form";
 
   const button = document.createElement("button");
-  button.innerText = "Interesting Content";
-  button.className = "btn-border";
+  button.innerText = "Register";
+  button.className = "btn";
   function register() {
-    alert("Juhuuu");
+    alert("Registered");
   }
 
   button.addEventListener("click", register);
 
   const title = document.createElement("h2");
-  title.innerText = "Awesome below:";
-  title.className = "btn-filled";
-  form.append(title, button);
+  title.innerText = "Reset Password";
+
+  const text = document.createElement("p");
+  text.innerText =
+    "Please enter your email to receive a link to create a new password via email";
+
+  const input = document.createElement("input");
+  input.type = "text";
+  input.placeholder = "Email";
+  input.className = "input";
+
+  form.append(title, text, input, button);
 
   return form;
 }
