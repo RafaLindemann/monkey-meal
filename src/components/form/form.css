@@ -8,7 +8,7 @@
   margin-top: 2em;
 }
 
-.form.hint a {
+.form.hint {
   margin-left: 0.5em;
 }
 
@@ -19,10 +19,14 @@
   grid-column-gap: 1.2em;
 }
 
-.form__otp input {
+.input {
   padding: 10px;
   width: 2.8rem;
   border-radius: 10px;
+  display: grid;
+
+  justify-content: center;
+  grid-column-gap: 1.2em;
 }
 
 .resend {
@@ -30,4 +34,8 @@
   text-decoration: none;
   padding-left: 10px;
   font-weight: bold;
+}
+
+.passmessage {
+  height: 1em;
 }
